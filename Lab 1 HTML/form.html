@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <h1>Form</h1>
+    <fieldset>
+        <form action="http://localhost:3000/profile" method="POST">
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="first name...">
+            </div>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="last name...">
+            </div>
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" name="emailadd" id="emailadd">
+            </div>
+            <div>
+                <h4>How much do you like beer?</h4>
+                <label for="radio1">A little bit</label>
+                <input type="radio" name="radio1" id="radio1">
+                <label for="radio2">Heaps</label>
+                <input type="radio" name="radio2" id="radio2">
+                <label for="radio3">Heaps as!</label>
+                <input type="radio" name="radio3" id="radio3">
+            </div>
+            <div>
+                <label for="ageselect">Select your age bracket:</label>
+                <select name="ageselect" id="ageselect">
+                    <option value="child">5 - 17</option>
+                    <option value="adult">17 - 65</option>
+                    <option value="senior"> >65 </option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Choose your favorite monster</legend>
+
+            <input type="radio" id="kraken" name="monster" value="K">
+            <label for="kraken">Kraken</label><br>
+
+            <input type="radio" id="sasquatch" name="monster" value="S">
+            <label for="sasquatch">Sasquatch</label><br>
+
+            <input type="radio" id="mothman" name="monster" value="M" />
+            <label for="mothman">Mothman</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
